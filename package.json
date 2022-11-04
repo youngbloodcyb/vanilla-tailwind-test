@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-tailwind-test",
+  "version": "1.0.0",
+  "description": "This is a repo to test using vanilla JS, Express JS, and tailwindCSS for a small web application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngbloodcyb/vanilla-tailwind-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngbloodcyb/vanilla-tailwind-test/issues"
+  },
+  "homepage": "https://github.com/youngbloodcyb/vanilla-tailwind-test#readme"
+}
