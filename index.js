@@ -1,14 +1,24 @@
 const express = require('express');
+const { home } = require('./controller');
+const cors = require('cors');
+require("dotenv").config();
+
+const { PORT } = process.env
 
 const app = express();
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.json());
+app.use(cors());
 
-app.get('/', (req, res) => {
-    res.render('index.html');
-});
+try {
+    app.get('/', home);
+} catch (err) {
+    console.log(err);
+}
 
-app.listen(3030, (err) => {
+
+app.listen(PORT, (err) => {
     if (err) console.log(err);
-    console.log("Server Running on port 3030");
+    console.log(`Server Running on port ${PORT}`);
 });
