@@ -570,6 +570,10 @@ video {
   display: flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -580,6 +584,14 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-evenly {
@@ -602,4 +614,18 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }

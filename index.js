@@ -1,5 +1,5 @@
 const express = require('express');
-const { home } = require('./controller');
+const { home, test } = require('./controller');
 const cors = require('cors');
 require("dotenv").config();
 
@@ -13,6 +13,7 @@ app.use(cors());
 
 try {
     app.get('/', home);
+    app.get('/test', test);
 } catch (err) {
     console.log(err);
 }
